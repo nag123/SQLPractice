@@ -1,0 +1,17 @@
+show databases;
+use sys;show tables;
+
+CREATE TABLE IF NOT EXISTS sys.DEPT (
+  `DEPTNO` INT,
+  `DNAME` VARCHAR(20) CHARACTER SET utf8,
+  `LOC` VARCHAR(20) CHARACTER SET utf8
+);
+
+INSERT INTO sys.DEPT VALUES
+  (10,'ACCOUNTING','NEW YORK'),
+  (20,'RESEARCH','DALLAS'),
+  (30,'SALES','CHICAGO'),
+  (40,'OPERATIONS','BOSTON');
+  
+  SELECT * FROM sys.DEPT;
+  drop table sys.DEPT;
